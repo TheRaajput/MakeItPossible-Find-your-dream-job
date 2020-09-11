@@ -1,0 +1,37 @@
+.main{
+    padding: 20px;
+    height: 900px;
+    width: 100%;
+    background-image: url("images/homejob.jfif");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+}
+.landing-site{
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.icon-main{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+hr{
+    background-color: white;
+}
+
+footer{
+    background-color: rgb(61, 54, 54);
+}
+
+img[alt="footer-img"]
+{
+    border-radius: 40%;
+}
+
+footer h1{
+    color: white;
+    text-align: center;
+}
