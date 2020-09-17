@@ -1,19 +1,46 @@
-.main{
-    padding: 20px;
-    height: 900px;
-    width: 100%;
-    background-image: url("images/homejob.jfif");
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover;
-}
-.landing-site{
-    color: white;
-    text-align: center;
-    margin-top: 15%;
-    background: rgba(0, 0, 0, 0.8);
-}
+main{
+    background: url("images/darkbg.jpg") center fixed;
 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    min-width: 100%;
+    min-height: 100%;
+}
+#content{
+    text-align: center;
+    padding-top: 30%;
+}
+h1{
+    color: white;
+    font-family: 'Ultra', serif;
+}
+.h6{
+    color: white;
+}
 .icon-main{
     max-width: 10%;
     max-height: 10%;
 }
+
+/* contact page */
+.contact-bg{
+    background: url("images/darkbg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cont-main{
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+#cont-main hr{
+    border-top: 1px dashed white;
+}
+.cont-form{
+    text-align: center;
+    padding-top: 25%;
+    color: white;
+}
+
