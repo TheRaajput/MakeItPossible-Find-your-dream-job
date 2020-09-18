@@ -9,7 +9,7 @@ main{
     min-height: 100%;
 }
 #content{
-    text-align: center;
+    text-align: left;
     padding-top: 30%;
 }
 h1{
@@ -20,8 +20,8 @@ h1{
     color: white;
 }
 .icon-main{
-    max-width: 10%;
-    max-height: 10%;
+    max-width: 8%;
+    max-height: 8%;
 }
 
 /* contact page */
