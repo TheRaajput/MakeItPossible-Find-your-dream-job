@@ -1,12 +1,16 @@
-main{
-    background: url("images/darkbg.jpg") center fixed;
-
-    width: 100%;
+.main-bx{
     height: 100%;
+    width: 100%;
+    background-image: url("images/darkbg.jpg");
+    background-position: center;
+    background-size: cover;
     position: absolute;
-
-    min-width: 100%;
-    min-height: 100%;
+}
+.landing-site{
+    text-align: left;
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
 }
 #content{
     text-align: left;
@@ -32,6 +36,10 @@ h1{
     .icon-main{
         max-height: 20%;
         max-width: 20%;
+    }
+    .landing-site{
+        margin-top: 40%;
+        margin-left: 2%;
     }
 }
 .footer{
@@ -59,17 +67,15 @@ h1{
     transform: scale(1.2);
 }
 
-#getsignin{
-    visibility: hidden;
+
+#getstarted{
+    position: relative;
+    left: 10%;
 }
 
-.main-container{
+#getsignin{
     position: relative;
-    top: 10px;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    max-width: 50%;
+    left: 30%;
 }
 
 

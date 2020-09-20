@@ -5,7 +5,7 @@
             MakeItPossible: Find your dream job
         </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stylesheets/styles.css">
         <link rel="icon" href="images/icon.png">
         <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     </head>
@@ -39,75 +39,24 @@
         </nav>
       </header>
       <!-- main -->
-      <main id="get_started">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div id="content">
-                <i><img src="images/LOGO.png" alt="" class="icon-main"></i>
-                <h1>MakeItPossible</h1>
-                <p class="h6">You follow your dream, We will lead you.</p>
-                <button class="btn btn-light bg-light btn-main" id="get_started" onclick="setTimeout(toregistration(), 1000)">Get Started!</button>
-              </div>
-            </div>
-          </div>
+      <div class="main-bx">
+        <div class="container-fluid landing-site">
+          <h1>MakeItPossible</h1>
+          <p>Find your dream job</p>
+          <button class="btn btn-light">Get Started!</button>
         </div>
-      </main>
-      <main id="getsignin">
-        <div class="container main-container">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </main>
+      </div>
       <!-- Footer -->
       <footer>
         <div class="container footer">
-          <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="" class="img-size"></a> 
-          <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="" class="img-size"></a> 
-          <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="" class="img-size"></a> 
+          <a href="https://www.instagram.com/" target="_blank"><img src="stylesheets/images/instagram.png" alt="" class="img-size"></a> 
+          <a href="https://www.linkedin.com/" target="_blank"><img src="stylesheets/images/linkedin.png" alt="" class="img-size"></a> 
+          <a href="https://www.twitter.com" target="_blank"><img src="stylesheets/images/twitter.png" alt="" class="img-size"></a> 
         </div>
       </footer>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-      <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
-
-      <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-          apiKey: "AIzaSyCFa5UC-_9ZG9dfjC2eJ5t7RwIYjgx_020",
-          authDomain: "makeitpossible.firebaseapp.com",
-          databaseURL: "https://makeitpossible.firebaseio.com",
-          projectId: "makeitpossible",
-          storageBucket: "makeitpossible.appspot.com",
-          messagingSenderId: "1054008310742",
-          appId: "1:1054008310742:web:5965cfe86b8eba342f0277",
-          measurementId: "G-W0N1Q8MJ64"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-        firebase.authDomain();
-      </script>
-      <script src="login.js"></script>
+      <script src="js/login.js"></script>
     </body>
 </html>
