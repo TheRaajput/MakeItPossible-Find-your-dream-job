@@ -79,7 +79,7 @@ h1{
 }
 
 
-/* contact page */
+/*...............................contact page.......................................*/
 .contact-bg{
     background: url("images/darkbg2.png");
     background-repeat: no-repeat;
@@ -99,6 +99,16 @@ h1{
     color: white;
 }
 
-
-
+/*.....................................About Me......................................*/
+.jumbotron{
+    text-align: center;
+}
+.jumbotron h1{
+    color: black;
+}
+.founder{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
 
