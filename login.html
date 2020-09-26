@@ -10,22 +10,30 @@
         <div class="bg">
             <div class="form-box">
                 <div class="button-box">
-                    <div id="my-btn"></div>
-                    <button type="button" class="toggle-btn">Log In</button>
-                    <button type="button" class="toggle-btn">Register</button>
+                    <div id="my-butn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
                 </div>
                 <div class="social-icons">
                     <img src="stylesheets/images/instagram.png">
                     <img src="stylesheets/images/twitter.png">
                     <img src="stylesheets/images/linkedin.png">
                 </div>
-                <form class="input-group">
+                <form id="login" class="input-group">
                     <input type="text" class="input-field" placeholder="E-mail..." required>
                     <input type="password" class="input-field" placeholder="Password" required>
                     <input type="checkbox" class="check-box" id=""><span>Remember Me!</span>
-                    
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="E-mail..." required>
+                    <input type="text" class="input-field" placeholder="username" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box" id=""><span>I agree to T&C</span>
+                    <button type="submit" class="submit-btn">Register</button>
                 </form>
             </div>
         </div>
+        <script src="js/login.js"></script>
     </body>
 </html>
