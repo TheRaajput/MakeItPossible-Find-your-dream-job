@@ -7,18 +7,18 @@ function toregistration(){
 
 
 //......................Toggle Var............................//
-let logIn = document.getElementById("login-page");
+let logInbtn= document.getElementById("login-page");
 let signIn = document.getElementById("register-page");
 let btntoggle = document.getElementById("my-butn");
 //......................Toggle Button...............................//
 function loginToggle(){
-    logIn.style.left = "50px"
+    logInbtn.style.left = "50px"
     signIn.style.left = "450px"
     btntoggle.style.left = "0"
 }
 
 function registerToggle(){
-    logIn.style.left = "-400px"
+    logInbtn.style.left = "-400px"
     signIn.style.left = "50px"
     btntoggle.style.left = "110px"
 }
