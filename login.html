@@ -20,20 +20,23 @@
                     <img src="stylesheets/images/linkedin.png">
                 </div>
                 <form id="login-page" class="input-group">
-                    <input type="text" class="input-field" placeholder="E-mail..." required>
-                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="text" id="enterMail" class="input-field" placeholder="E-mail..." required>
+                    <input type="password" id="enterPass" class="input-field" placeholder="Password" required>
                     <input type="checkbox" class="check-box" id=""><span>Remember Me!</span>
-                    <button type="submit" class="submit-btn">Login</button>
+                    <button type="submit" id="login" class="submit-btn" onclick="toMain()">Login</button>
                 </form>
                 <form id="register-page" class="input-group">
-                    <input type="text" class="input-field" placeholder="E-mail..." required>
-                    <input type="text" class="input-field" placeholder="username" required>
-                    <input type="password" class="input-field" placeholder="Password" required>
-                    <input type="checkbox" class="check-box" id=""><span>I agree to T&C</span>
-                    <button type="submit" class="submit-btn">Register</button>
+                    <input type="text" id="getEmail" class="input-field" placeholder="E-mail..." required>
+                    <input type="password" id="getPass" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box" id="checkTC" required><span>I agree to T&C</span>
+                    <button type="submit" id="signin" class="submit-btn" onclick="signup()">Register</button>
                 </form>
             </div>
         </div>
         <script src="js/login.js"></script>
+        <script src="js/activity.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
     </body>
 </html>
