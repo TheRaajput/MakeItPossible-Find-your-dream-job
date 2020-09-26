@@ -173,10 +173,6 @@ h1{
     background: linear-gradient(to right, #ff661a,#ffaa80);
     border-radius: 30px;
     transition: .5s;
-    outline: none;
-}
-#my-btn:focus{
-    outline: none;
 }
 
 .social-icons{
@@ -226,6 +222,7 @@ h1{
 
 .check-box{
     margin: 30px 10px 30px 0;
+    cursor: pointer;
 }
 span{
     margin: 22px 10px 30px 0;
