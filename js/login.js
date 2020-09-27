@@ -1,27 +1,42 @@
-//.............Get Currently signed-in user.......................//
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      window.location.href = "main.html"
-    } else {
-      
-    }
-  });
+//...........................Create User...............................//
+const registerForm = document.querySelector('#register-page');
+
+registerForm.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const getEmail = registerForm['getEmail'].value;
+  const getPass = registerForm['getPass'].value;
+  const checkTnC = registerForm['checkTC'];
+  if (checkTnC.checked = 'true')
+  {
+    auth.createUserWithEmailAndPassword(getEmail,getPass).then(cred=>{
+      console.log(cred.user);
+      registerForm.reset();
+      loginToggle();
+    }) 
+  }
+})
+
+
 //..................................Login Auth..........................//
+const loginForm = document.querySelector('#login-page');
 
-function logIn(){
-    var enterEmail = document.getElementById("enterMail").value;
-    var enterPass = document.getElementById("enterPass").value;
+loginForm.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const enterMail = loginForm['enterMail'].value;
+  const enterPass = loginForm['enterPass'].value;
 
-    firebase.auth().signInWithEmailAndPassword(enterEmail, enterPass).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-        window.alert("Error: " + errorMessage);
-    });
+  const promise = auth.signInWithEmailAndPassword(enterMail,enterPass);
+  promise.catch(function(error){
+    var message = error.message;
+    alert("Error: " +message);
+  });
+  promise.then(cred=>{
+    console.log(cred.user);
+    window.location.href = 'main.html'
+  })
+})
+//.............Get Currently signed-in user.......................//
 
-    window.location.href = "main.html"
-}
+
 
 
