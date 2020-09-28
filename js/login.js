@@ -1,16 +1,31 @@
+//......................Navbar.................................//
 
+const myNavbar = document.querySelector('#main-nav');
+myNavbar.style.display = 'none'
+
+//......................Form Box.........................//
+
+const formBox = document.querySelector('#login-box');
+formBox.style.display = 'block'
+
+//....................main......................//
+
+const mainBody  = document.querySelector('.body-main');
+mainBody.style.display = 'none'
 //...................Managing User....................//
 auth.onAuthStateChanged(user => {
   if (user)
   {
     console.log('User logged in');
-    myNavbar.style.display = 'block'
-    formBox.style.display = 'none'
+    formBox.style.display = 'none';
+    myNavbar.style.display = 'block';
+    mainBody.style.display = 'block'
   }
   else {
     console.log('Logged Out')
-    myNavbar.style.display = 'none'
-    formBox.style.display = 'block'
+    myNavbar.style.display = 'none';
+    formBox.style.display = 'block';
+    mainBody.style.display = 'none';
   }
 });
 

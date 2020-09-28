@@ -128,6 +128,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+    overflow: hidden;
 }
 
 .form-box{
@@ -246,4 +247,26 @@ span svg{
     border-radius: 50%;
     border: 1px solid white;
     cursor: pointer;
+}
+
+.body-main{
+    background: white;
+    margin-top: 4%;
+    background:transparent;
+}
+
+.left{
+    background: rgba(202, 215, 236, 0.5);
+    border-radius: 30px;
+    height: 91.5vh;
+    position: relative;
+    text-align: center;
+}
+.right{
+    height: 91.5vh;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    overflow: scroll;
+    text-align: justify;
 }

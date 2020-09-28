@@ -1,14 +1,3 @@
-//......................Navbar.................................//
-
-const myNavbar = document.querySelector('#main-nav');
-myNavbar.style.display = 'none'
-
-//......................Form Box.........................//
-
-const formBox = document.querySelector('#login-box');
-formBox.style.display = 'block'
-
-
 //......................Get Started to registration.....................//
 let getstarted = document.getElementById("get_started");
 
