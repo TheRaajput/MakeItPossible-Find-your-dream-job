@@ -1,8 +1,19 @@
+//......................Navbar.................................//
+
+const myNavbar = document.querySelector('#main-nav');
+myNavbar.style.display = 'none'
+
+//......................Form Box.........................//
+
+const formBox = document.querySelector('#login-box');
+formBox.style.display = 'block'
+
+
 //......................Get Started to registration.....................//
 let getstarted = document.getElementById("get_started");
 
 function toregistration(){
-    window.location.href = "login.html"
+    window.location.href = "main.html"
 }
 
 
@@ -22,4 +33,8 @@ function registerToggle(){
     signIn.style.left = "50px"
     btntoggle.style.left = "110px"
 }
+
+
+
+
 

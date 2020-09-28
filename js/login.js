@@ -1,27 +1,41 @@
+
+//...................Managing User....................//
+auth.onAuthStateChanged(user => {
+  if (user)
+  {
+    console.log('User logged in');
+    myNavbar.style.display = 'block'
+    formBox.style.display = 'none'
+  }
+  else {
+    console.log('Logged Out')
+    myNavbar.style.display = 'none'
+    formBox.style.display = 'block'
+  }
+});
+
 //...........................Create User...............................//
 const registerForm = document.querySelector('#register-page');
-
 registerForm.addEventListener('submit', (e)=>{
   e.preventDefault();
+  //get user email and password
   const getEmail = registerForm['getEmail'].value;
   const getPass = registerForm['getPass'].value;
-  const checkTnC = registerForm['checkTC'];
-  if (checkTnC.checked = 'true')
-  {
-    auth.createUserWithEmailAndPassword(getEmail,getPass).then(cred=>{
-      console.log(cred.user);
-      registerForm.reset();
-      loginToggle();
-    }) 
-  }
-})
+
+  //create account
+  auth.createUserWithEmailAndPassword(getEmail,getPass).then(cred=>{
+    console.log(cred.user);
+    loginToggle();
+  })
+});
 
 
 //..................................Login Auth..........................//
 const loginForm = document.querySelector('#login-page');
-
 loginForm.addEventListener('submit', (e)=>{
   e.preventDefault();
+
+  //...................Get Email...........................//
   const enterMail = loginForm['enterMail'].value;
   const enterPass = loginForm['enterPass'].value;
 
@@ -31,12 +45,15 @@ loginForm.addEventListener('submit', (e)=>{
     alert("Error: " +message);
   });
   promise.then(cred=>{
-    console.log(cred.user);
-    window.location.href = 'main.html'
-  })
-})
-//.............Get Currently signed-in user.......................//
+    loginForm.reset();
+  });
+});
 
+//.............Logout.......................//
 
-
+const logOutbtn = document.querySelector('#signOut');
+logOutbtn.addEventListener('click', (e)=>{
+  e.preventDefault();
+  auth.signOut();
+});
 
