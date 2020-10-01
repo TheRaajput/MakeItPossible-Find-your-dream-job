@@ -256,7 +256,7 @@ span svg{
 }
 
 .left{
-    background: rgba(202, 215, 236, 0.5);
+    background: rgba(236, 238, 241, 0.5);
     border-radius: 30px;
     height: 91.5vh;
     position: relative;
@@ -277,7 +277,7 @@ span svg{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1 transparent; 
+    background:transparent; 
 
   }
    
